@@ -14,6 +14,11 @@
 		C7091DBA1B7C5C1D002FB576 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7091DB91B7C5C1D002FB576 /* Images.xcassets */; };
 		C7091DBD1B7C5C1D002FB576 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7091DBB1B7C5C1D002FB576 /* LaunchScreen.xib */; };
 		C7091DC91B7C5C1D002FB576 /* iOSDocumentFileBrowserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C7091DC81B7C5C1D002FB576 /* iOSDocumentFileBrowserTests.m */; };
+		C7091DDB1B7C5D79002FB576 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7091DDA1B7C5D79002FB576 /* QuickLook.framework */; };
+		C7091DE81B7C5F95002FB576 /* docSample.docx in Resources */ = {isa = PBXBuildFile; fileRef = C7091DE41B7C5F95002FB576 /* docSample.docx */; };
+		C7091DEA1B7C5F95002FB576 /* pngSample.png in Resources */ = {isa = PBXBuildFile; fileRef = C7091DE61B7C5F95002FB576 /* pngSample.png */; };
+		C7091DEB1B7C5F95002FB576 /* txtSample.txt in Resources */ = {isa = PBXBuildFile; fileRef = C7091DE71B7C5F95002FB576 /* txtSample.txt */; };
+		C7091DEF1B7C73AD002FB576 /* pngSample1.png in Resources */ = {isa = PBXBuildFile; fileRef = C7091DEE1B7C73AD002FB576 /* pngSample1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,11 @@
 		C7091DC21B7C5C1D002FB576 /* iOSDocumentFileBrowserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSDocumentFileBrowserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7091DC71B7C5C1D002FB576 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C7091DC81B7C5C1D002FB576 /* iOSDocumentFileBrowserTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSDocumentFileBrowserTests.m; sourceTree = "<group>"; };
+		C7091DDA1B7C5D79002FB576 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
+		C7091DE41B7C5F95002FB576 /* docSample.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = docSample.docx; sourceTree = "<group>"; };
+		C7091DE61B7C5F95002FB576 /* pngSample.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pngSample.png; sourceTree = "<group>"; };
+		C7091DE71B7C5F95002FB576 /* txtSample.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = txtSample.txt; sourceTree = "<group>"; };
+		C7091DEE1B7C73AD002FB576 /* pngSample1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pngSample1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7091DDB1B7C5D79002FB576 /* QuickLook.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +74,7 @@
 		C7091DA01B7C5C1C002FB576 = {
 			isa = PBXGroup;
 			children = (
+				C7091DDA1B7C5D79002FB576 /* QuickLook.framework */,
 				C7091DAB1B7C5C1D002FB576 /* iOSDocumentFileBrowser */,
 				C7091DC51B7C5C1D002FB576 /* iOSDocumentFileBrowserTests */,
 				C7091DAA1B7C5C1D002FB576 /* Products */,
@@ -96,6 +108,10 @@
 		C7091DAC1B7C5C1D002FB576 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C7091DEE1B7C73AD002FB576 /* pngSample1.png */,
+				C7091DE41B7C5F95002FB576 /* docSample.docx */,
+				C7091DE61B7C5F95002FB576 /* pngSample.png */,
+				C7091DE71B7C5F95002FB576 /* txtSample.txt */,
 				C7091DAD1B7C5C1D002FB576 /* Info.plist */,
 				C7091DAE1B7C5C1D002FB576 /* main.m */,
 			);
@@ -199,8 +215,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7091DEF1B7C73AD002FB576 /* pngSample1.png in Resources */,
 				C7091DB81B7C5C1D002FB576 /* Main.storyboard in Resources */,
+				C7091DEA1B7C5F95002FB576 /* pngSample.png in Resources */,
 				C7091DBD1B7C5C1D002FB576 /* LaunchScreen.xib in Resources */,
+				C7091DE81B7C5F95002FB576 /* docSample.docx in Resources */,
+				C7091DEB1B7C5F95002FB576 /* txtSample.txt in Resources */,
 				C7091DBA1B7C5C1D002FB576 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

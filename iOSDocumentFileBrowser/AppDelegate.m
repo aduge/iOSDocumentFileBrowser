@@ -16,7 +16,29 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    UIImage *image_png1 = [UIImage imageNamed:@"pngSample1"];
+    NSData *data_png1 = UIImagePNGRepresentation(image_png1);
+    UIImage *image_png = [UIImage imageNamed:@"pngSample"];
+    NSData *data_png = UIImagePNGRepresentation(image_png);
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsPath = [paths objectAtIndex:0]; //Get the docs directory
+    NSString *filePath_jpg = [documentsPath stringByAppendingPathComponent:@"pngSample1.png"]; //Add the file name
+    NSString *filePath_png = [documentsPath stringByAppendingPathComponent:@"pngSample.png"];
+    [data_png1 writeToFile:filePath_jpg atomically:YES]; //Write the file
+    [data_png writeToFile:filePath_png atomically:YES];
+    
+    
+    NSString *path_doc = [[NSBundle mainBundle]pathForResource:@"docSample" ofType:@"docx"];
+    NSString *path_txt = [[NSBundle mainBundle]pathForResource:@"txtSample" ofType:@"txt"];
+    NSData *data_doc = [NSData dataWithContentsOfFile:path_doc];
+    NSData *data_txt = [NSData dataWithContentsOfFile:path_txt];
+    NSString *filePath_doc = [documentsPath stringByAppendingPathComponent:@"docSample.docx"];
+    NSString *filePath_txt = [documentsPath stringByAppendingPathComponent:@"txtSample.txt"];
+    [data_doc writeToFile:filePath_doc atomically:YES];
+    [data_txt writeToFile:filePath_txt atomically:YES];
+
+    
     return YES;
 }
 
